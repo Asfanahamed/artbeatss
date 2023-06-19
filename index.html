@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. ASFAN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #e9e9e9;
+    }
+
+    .header h1 {
+      color: #222222;
+      font-size: 30px;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .content {
+      margin-left: 190px;
+      border-left: 1px solid #d4d4d4;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(1) {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    tr td i.fas {
+      display: block;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .footer {
+      padding: 55px 20px;
+      background-color: #2e3550;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Mr. ASFAN</h1>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </header>
+    <aside class="left">
+      <img src="data:image/png;base64,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" width="160px" />
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <br><br>
+      <p>"Do something important in life. I convert art to code."<br>- Aju</p>
+    </aside>
+    <main class="content">
+      <h2>About Me</h2>
+      <p>Artist from Mannar.</p>
+      <h2>My Career</h2>
+      <p>I work as a artist for a company that makes me so happy and peacefully.</p>
+      <hr><br>
+      <h2>How Can I Help You?</h2>
+      <table>
+        <tr>
+          <th>SKILL 1</th>
+          <th>SKILL 2</th>
+          <th>SKILL 3</th>
+        </tr>
+        <tr>
+          <td><i class="fas fa-broom"></i></td>
+          <td><i class="fas fa-archive"></i></td>
+          <td><i class="fas fa-trailer"></i></td>
+        </tr>
+        <tr>
+          <td>Make new crafts</td>
+          <td>Storing some facts for you</td>
+          <td>Draw with something new dimensions</td>
+        </tr>
+        <tr>
+      </table>
+      <form>
+        <label>Email: <input type="text" name="email"></label><br>
+        <label> Mobile: <input type="text" name="mobile"> </label><br>
+        <textarea name="comments" rows="4">Enter your message</textarea><br>
+        <input type="submit" value="Submit" /><br>
+      </form>
+    </main>
+    <footer class="footer">&copy; Copyright Mr. Asfan</footer>
+  </div>
+</body>
+
+</html>
